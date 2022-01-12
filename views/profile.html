@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Shopping Cart</title>
+</head>
+
+<body>
+    <!--Navbar-->
+    <header>
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light nav-bg">
+            <div class="container">
+                <a class="navbar-brand text-capitalize" href="../index.html"><span>sh</span>opping cart</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown" id="userProfile"></li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item" id="myProduct">
+                            <a class="nav-link" aria-current="page" href="myproduct.html">My Product</a>
+                        </li>
+                        <li class="nav-item nav-cart position-relative">
+                            <p class="nav-link nav-cart__action" onClick="toggleClick(event)">
+                                <i class="fas fa-shopping-cart"></i>
+                                <span class="position-absolute start-100 translate-middle badge rounded-pill"></span>
+                            </p>
+                            <div class="nav-cart__product">
+                                <div id="choosenProduct"></div>
+                                <div class="product-choosen">
+                                    <a class="d-block text-center" href="productcart.html">View Cart</a>
+                                </div>
+                            </div>
+                        </li>
+                        </li>
+                        <li class="nav-item user-login">
+                            <a class="nav-link" href="login.html">sign in</a>
+                        </li>
+                        <li class="nav-item user-login">
+                            <a class="nav-link" href="register.html">sign up</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--End Navbar-->
+    </header>
+    <section class="profile my-5">
+        <div class="container">
+            <div class="profile-container text-center">
+                
+            </div>
+        </div>
+    </section>
+    <div class="creat-icon"><i class="fas fa-plus"></i></div>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/data.js"></script>
+    <script src="../js/variables.js"></script>
+    <script src="../js/mine.js"></script>
+</body>
+
+</html>

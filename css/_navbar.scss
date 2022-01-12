@@ -1,0 +1,97 @@
+.nav-bg{
+    background-color: #EDEDED;
+}
+.navbar-brand{
+    font-family: $main-font;
+    font-size:1.84rem;
+    span{
+        color:$main-color;
+    }
+}
+.navbar-expand-lg .navbar-collapse{
+    place-content: end;
+}
+.navbar-light .navbar-nav {
+    .nav-item{
+        margin: 0 4px;
+        .nav-link{
+            font-weight: 600;
+            color: #333;
+            &:hover{
+                color:$main-color
+            }
+        }
+        .dropdown-toggle::after{
+            margin-left: 0.025em;
+            border-top: 0.3em solid $main-color;
+            border-right: 0.3em solid transparent;
+            border-bottom: 0;
+            border-left: 0.3em solid transparent;
+            vertical-align: 0.155em;
+        }
+        .profile-img{
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+        }
+        .dropdown-menu{
+            left:-42px;
+            .dropdown-divider{
+                background-color: $main-color;
+            }
+            .profil-name{
+                background-color: #F8F9FA;
+                span{
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+    .nav-cart__action{
+        cursor: pointer;
+        .badge{
+            top: 3px;
+            padding: 0.35em 0.562em;
+            display: none;
+            background-color: $main-color;
+            left: 100%;
+            @media (max-width:768.99px) {
+                left:22px
+            }
+            
+        }
+    }
+    .nav-cart__product{
+        position: absolute;
+        top: 64px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color:#F5F5F5;
+        width: 250px;
+        padding:10px;
+        z-index: 999;
+        transition: display 3s;
+        display: none;
+        .product-choosen {
+            display: none;
+                a{
+                text-decoration: none;
+                color: white;
+                font-size: 700;
+                padding: 10px 0;
+                background-color: $main-color;
+                &:hover{
+                    background-color: rgba(214, 126, 77,0.8);
+                }
+            }
+        }
+        .non-item {
+            margin:20px;
+            font-weight: 700;
+        }
+    }
+}
+
+
+
+
